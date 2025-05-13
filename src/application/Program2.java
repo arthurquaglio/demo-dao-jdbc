@@ -26,13 +26,13 @@ public class Program2 {
         departmentDao.insert(newDepartment);
         System.out.println("INSERTED! New id: " + newDepartment.getId());
 
-        System.out.println("\n=== TEST 5: seller Update ===");
+        System.out.println("\n=== TEST 4: seller Update ===");
         department = departmentDao.findById(5);
         department.setName("Foods");
         departmentDao.update(department);
         System.out.println("Update Completed");
 
-        System.out.println("\n=== TEST 6: seller Delete ===");
+        System.out.println("\n=== TEST 5: seller Delete ===");
         departmentDao.deleteById(7);
         System.out.println("Delete Completed");
     }
